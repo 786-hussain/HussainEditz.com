@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Hussain Edit.in</title>
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@600&family=Poppins&display=swap" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: 'Poppins', sans-serif;
+      background: radial-gradient(circle at top left, #1a1a1a, #111);
+      background-image: url('https://www.transparenttextures.com/patterns/graphy.png');
+      background-size: cover;
+      background-repeat: repeat;
+      color: #fff;
+      min-height: 100vh;
+    }
+
+    header {
+      background: linear-gradient(90deg, #ff416c, #ff4b2b);
+      padding: 20px;
+      text-align: center;
+    }
+
+    header h1 {
+      font-family: 'Orbitron', sans-serif;
+      font-size: 2.5rem;
+      color: white;
+    }
+
+    main {
+      padding: 30px;
+    }
+
+    section {
+      margin-bottom: 40px;
+      background-color: rgba(255, 255, 255, 0.05);
+      border: 1px solid rgba(255, 255, 255, 0.1);
+      border-radius: 12px;
+      padding: 20px;
+      box-shadow: inset 0 0 80px #ff416c1a;
+    }
+
+    h2 {
+      color: #ff416c;
+      font-size: 1.8rem;
+      margin-bottom: 10px;
+    }
+
+    ul li {
+      line-height: 1.8rem;
+    }
+
+    .footer {
+      text-align: center;
+      padding: 20px;
+      color: #888;
+    }
+
+    .buttons {
+      text-align: center;
+      margin-top: 30px;
+    }
+
+    .buttons a {
+      display: inline-block;
+      margin: 8px;
+      padding: 10px 20px;
+      border-radius: 8px;
+      text-decoration: none;
+      color: white;
+      font-weight: bold;
+      transition: 0.3s ease;
+    }
+
+    .buttons a.whatsapp {
+      background: #25D366;
+    }
+
+    .buttons a.instagram {
+      background: #E1306C;
+    }
+
+    .buttons a:hover {
+      opacity: 0.8;
+    }
+
+    #typing-text {
+      text-align: center;
+      font-size: 1.4rem;
+      margin-top: 30px;
+      color: #ff4b2b;
+    }
+
+    a {
+      color: #ff4b2b;
+      text-decoration: none;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Hussain Edit.in</h1>
+  </header>
+
+  <main>
+    <section>
+      <h2>About Me</h2>
+      <p>Hi! I'm <strong>Hussain</strong> – a passionate video editor and Canva designer with 5+ years of professional-level experience. I specialize in Instagram reels, attitude edits, and stylish thumbnails. Whether you're a content creator or business, I'm here to bring your ideas to life.</p>
+    </section>
+
+    <section>
+      <h2>My Services</h2>
+      <ul>
+        <li>🎬 <strong>Video Editing</strong> – ₹15/min (Normal Reels)</li>
+        <li>🔥 <strong>Advanced Edits</strong> – ₹20–₹25/min</li>
+        <li>🖼️ <strong>Canva Thumbnails</strong> – ₹30–₹250 (depends on complexity)</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Contact</h2>
+      <ul>
+        <li>📞 <strong>Phone 1:</strong> 9582679286</li>
+        <li>📞 <strong>Phone 2:</strong> 7827550340</li>
+        <li>📍 <strong>Location:</strong> India</li>
+        <li>🎂 <strong>Age:</strong> 18 (for professional work)</li>
+        <li>📸 <strong>Instagram:</strong> <a href="https://www.instagram.com/hussaineditz__" target="_blank">@hussaineditz__</a></li>
+      </ul>
+
+      <div class="buttons">
+        <a href="https://wa.me/919582679286" target="_blank" class="whatsapp">📱 WhatsApp: 9582679286</a>
+        <a href="https://wa.me/917827550340" target="_blank" class="whatsapp">📱 WhatsApp: 7827550340</a>
+        <a href="https://www.instagram.com/hussaineditz__" target="_blank" class="instagram">📸 Instagram</a>
+      </div>
+    </section>
+
+    <h2 id="typing-text"></h2>
+  </main>
+
+  <div class="footer">
+    <p>© 2025 Hussain Edit.in | Designed with ❤️ by Hussain</p>
+  </div>
+
+  <script>
+    const text = "Hi, I'm Hussain – Editor | Designer | Creator";
+    let i = 0;
+    function type() {
+      if (i < text.length) {
+        document.getElementById("typing-text").innerHTML += text.charAt(i);
+        i++;
+        setTimeout(type, 80);
+      }
+    }
+    type();
+  </script>
+</body>
+</html>
